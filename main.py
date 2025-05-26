@@ -27,5 +27,5 @@ for submission in reddit.subreddit("OnePiece").top(limit=100):
     cleaned_text = html.unescape(submission.selftext)
     print("Title", cleaned_title)
     print("Body:", cleaned_text)
-    print("Link:", submission.url)
+    print("Link:", f"https://reddit.com{submission.permalink}")
     print("------------END POST------------")
