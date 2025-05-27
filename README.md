@@ -12,11 +12,11 @@ Reddit comment scraper for market research and validation
 
 🔄 Reddit scraper 
 
+🔄 Frontend integration
+
 🔄 NLP + sentiment analyzer
 
 🔄 API endpoints
-
-🔄 Frontend integration
 
 🔄Auth, DB, polish, export, launch
 
