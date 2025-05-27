@@ -1,7 +1,5 @@
 import os
 from dotenv import load_dotenv
-import praw
-import html
 from supabase import create_client, Client
 from reddit_scraper import RedditScraper
 
@@ -23,7 +21,7 @@ def save_post_to_supabase(title, body, link, upvotes):
     }
     supabase.table("reddit_posts").insert(data).execute()
 
-top_posts = scraper.fetch_top_posts("OnePiece", limit=10)
+top_posts = scraper.fetch_top_posts("cats", limit=100)
 for post in top_posts:
     save_post_to_supabase(
         title=post["title"],
